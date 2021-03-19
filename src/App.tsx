@@ -9,8 +9,11 @@ function App() {
   // tsc.cmd .\test.ts
   // node test.js
 
-  const GRAPHQL_API = "https://whispering-bayou-41774.herokuapp.com/api";
-  const GET_QUERY = `
+  const [data, dataSet] = useState<any[]>([]);
+
+  useEffect(() => {
+    const GRAPHQL_API = "https://whispering-bayou-41774.herokuapp.com/api";
+    const GET_QUERY = `
     query{
       articles{
         id,
@@ -19,10 +22,6 @@ function App() {
       }  
     }
     `;
-
-  const [data, dataSet] = useState<any[]>([]);
-
-  useEffect(() => {
     const fetchData = async () => {
       const queryResult = await axios({
         url: GRAPHQL_API,
