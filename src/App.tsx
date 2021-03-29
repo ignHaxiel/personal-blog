@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div>
         <div className="sidenav">
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/article">Article</Link>
           <Link to="/about">About</Link>
         </div>
