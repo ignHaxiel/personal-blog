@@ -44,6 +44,5 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7"
-  },
-  "homepage": "https://vigilant-almeida-967742.netlify.app/"
+  }
 }
